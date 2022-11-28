@@ -14,7 +14,7 @@ async function closeConnection() {
   if (connectDb) {
     setTimeout(async () => {
       await connection.close();
-    }, 1500);
+    }, 10000);
   } else {
     console.log("No Connection");
   }
